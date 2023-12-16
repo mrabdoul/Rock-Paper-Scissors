@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+	<header>
+		<ul>
+			<li>ROCK</li>
+			<li>PAPER</li>
+			<li>SCISSORS</li>
+		</ul>
+		<div id="scoreboard">
+			<p>SCORE</p>
+			<div id="score">0</div>
+		</div>
+	</header>
+	<main>
+		<section id="result">
+			<h1>result</h1>
+		</section>
+		<section id="game">
+			<button class="playButton" id="rockBtn" onclick="playRound('rock')"><img src="./images/icon-rock.svg"></button>
+			<button class="playButton" id="paperBtn" onclick="playRound('paper')"><img src="./images/icon-paper.svg"></button>
+			<button class="playButton" id="scissorsBtn" onclick="playRound('scissors')"><img src="./images/icon-scissors.svg"></button>
+		</section>
+		<section id="modal">
+			<div id="modalHead">
+				<h1>RULES</h1>
+				<button id="closeBtn"><img src="./images/icon-close.svg"></button>
+			</div>
+			<p><img src="./images/image-rules.svg"></p>
+		</section>
+	</main>
+	<footer>
+		<button id="modalBtn">RULES</button>
+	</footer>
+	<script src="./script.js"></script>
+</body>
+</html>
